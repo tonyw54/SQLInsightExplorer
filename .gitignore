@@ -22,6 +22,8 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
+.venv/
+env.md
 
 # .NET Core
 project.lock.json
