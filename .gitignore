@@ -23,7 +23,6 @@ bld/
 [Ll]og/
 [Ll]ogs/
 .venv/
-env.md
 
 # .NET Core
 project.lock.json
@@ -54,3 +53,5 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+.env

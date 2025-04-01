@@ -1,4 +1,5 @@
 import os
+from dotenv import load_dotenv
 import pytds
 import anthropic
 from typing import Dict, Any, List, Optional
@@ -7,6 +8,9 @@ from contextlib import contextmanager
 class SQLTool:
     def __init__(self):
         """Initialize SQLTool with API client and connection parameters."""
+        # Load environment variables from .env file
+        load_dotenv()
+        
         # Get API key from environment variable
         api_key = os.getenv('ANTHROPIC_API_KEY')
         if not api_key:
